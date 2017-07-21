@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes wave-x{
+    from {
+        transform: translate(0px, 0px);
+    }
+    to {
+        transform: translate(-200px, 0px);
+    }
+}
+
+#view{
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: calc(50vh - 200px);
+    margin-left: calc(50vw - 100px);
+    overflow: hidden;
+}
+
+#ducky{
+    position: relative;
+    top: 40px;
+    left: 100px;
+    width: 50px;
+    z-index: 1;
+}
+
+#sea-1-wrapper{
+    animation-name: wave-x;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: linear;
+}
+
+#sea-2{
+    background-color: lightblue;
+    height: 200px;
+    position: relative;
+    top: -4px;
+}
+
+@keyframes wave {
+    0%   {
+        transform: translate(0px, 20px);
+    }
+    50%  {
+        transform: translate(0px, 0px);
+    }
+    100%  {
+        transform: translate(0px, 20px);
+    }
+}
+
+#elem-container{
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
