@@ -22,12 +22,31 @@ body{
     overflow: hidden;
 }
 
+@keyframes duck-anim {
+    0%   {
+        transform: translate(0px, -5px);
+    }
+    50%  {
+        transform: translate(0px, 0px);
+    }
+    100%  {
+        transform: translate(0px, 5px);
+    }
+}
+
+
 #ducky{
     position: relative;
     top: 40px;
     left: 100px;
     width: 50px;
     z-index: 1;
+
+    animation-name: duck-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 #sea-1-wrapper{
