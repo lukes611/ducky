@@ -42,7 +42,7 @@ body{
     background-color: lightblue;
     height: 200px;
     position: relative;
-    top: -4px;
+    top: -5px;
 }
 
 @keyframes wave {
