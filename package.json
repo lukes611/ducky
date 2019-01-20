@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lukes611": "pm2 start server.js --name ducky:8080",
     "start": "node server.js"
   },
   "author": "luke lincoln",
