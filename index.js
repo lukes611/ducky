@@ -1,10 +1,9 @@
 
 
 window.onload = () => {
-    let genWaveSvg = (w,h,inc=0.5,f=0.5,a=4,fill="lightblue") => {
-        let P = 1/f;
+    const genWaveSvg = (w, h, inc = 0.5, f = 0.5, a = 4, fill = "#00c4cc") => {
         let wavePoints = [];
-        for(let i = 0; i < w; i+=inc){
+        for(let i = 0; i < w; i += inc){
             wavePoints.push({
                 x : i,
                 y : Math.sin(((i)*f))*a + h/2
@@ -18,7 +17,7 @@ window.onload = () => {
         </svg>`;
         return s;
     };
-    let period = ((400/Math.PI)/2)/4;
-    let Fr = 1 / (period);
+    const period = ((400/Math.PI)/2)/4;
+    const Fr = 1 / period;
     document.getElementById('sea-1-wrapper').innerHTML = genWaveSvg(400,16, 0.001, Fr, 3);
 };
