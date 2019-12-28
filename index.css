@@ -22,6 +22,7 @@ body{
     margin-left: calc(50vw - 100px);
     overflow: hidden;
     transform: rotate(0.0001deg);
+    display: none;
 }
 
 @keyframes duck-anim {

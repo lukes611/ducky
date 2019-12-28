@@ -20,4 +20,5 @@ window.onload = () => {
     const period = ((400/Math.PI)/2)/4;
     const Fr = 1 / period;
     document.getElementById('sea-1-wrapper').innerHTML = genWaveSvg(400,16, 0.001, Fr, 3);
+    document.getElementById('view').style.display = 'block';
 };
