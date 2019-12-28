@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
+    height: 100vh;
 }
 
 @keyframes wave-x{
@@ -18,7 +19,7 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: calc(50vh - 200px);
+    margin-top: calc(50vh - 100px);
     margin-left: calc(50vw - 100px);
     overflow: hidden;
     transform: rotate(0.0001deg);
